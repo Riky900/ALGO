@@ -29,7 +29,8 @@ public:
         top = NULL;
     }
 
-    
+   
+
     void pop()
     {
         if (isEmpty())
