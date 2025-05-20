@@ -39,25 +39,18 @@ public:
         return value;
     }
 
-    
-
-    void peek()
+    void pop()
     {
-        if (top == NULL)
+        if (isEmpty())
         {
-            cout << "List is Empty." << endl;
+            cout << "Stack is Empty" << endl; 
         }
-        else
-        {
-            Node *current = top;
-            while (current != NULL)
-            {
-                cout << current->data << " " << endl;
-                current = current->next;
-            }
-            cout << endl;
-        }
+
+        cout << "Popped Value: " << top->data << endl;
+        top = top->next;
     }
+
+    
 
     bool isEmpty()
     {
